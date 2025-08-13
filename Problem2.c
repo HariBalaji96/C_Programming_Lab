@@ -4,7 +4,7 @@
 void main(){
 
     int a,b,c;
-    int root1, root2, root3, root4;
+    int root1, root2;
 
     printf("Enter the Co-Efficient of X^2: ");
     scanf("%d", &a);
@@ -12,13 +12,13 @@ void main(){
     scanf("%d", &b);
     printf("Enter the Constant: ");
     scanf("%d", &c);
-
-    root1 = (-1*b + sqrt((b*b)- 4*a*c))/2*a;
-    root2 = (-1*b + sqrt((b*b)- 4*a*c))/2*a;
-    root3 = (-1*b - sqrt((b*b)- 4*a*c))/2*a;
-    root4 = (-1*b - sqrt((b*b)- 4*a*c))/2*a;
-
-    printf("Roots are %d,%d,%d,%d",root1,root2,root3,root4);
-
+    int validator = (b*b)- 4*a*c;
+    if(validator < 0){
+        printf("Roots are imaginary!");
+    }else{
+        root1 = (-1*b + sqrt(validator))/2*a;
+        root2 = (-1*b - sqrt(validator))/2*a;
+        printf("Roots are %d and %d", root1, root2);
+    }
 
 }
