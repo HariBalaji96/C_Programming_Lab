@@ -1,10 +1,10 @@
 #include<stdio.h>
 #include<Math.h>
 
-void main(){
 
-    int a,b,c;
-    int root1, root2;
+int main() {
+    int a, b, c;
+    double root1, root2;
 
     printf("Enter the Co-Efficient of X^2: ");
     scanf("%d", &a);
@@ -12,13 +12,16 @@ void main(){
     scanf("%d", &b);
     printf("Enter the Constant: ");
     scanf("%d", &c);
-    int validator = (b*b)- 4*a*c;
-    if(validator < 0){
-        printf("Roots are imaginary!");
-    }else{
-        root1 = (-1*b + sqrt(validator))/2*a;
-        root2 = (-1*b - sqrt(validator))/2*a;
-        printf("Roots are %d and %d", root1, root2);
-    }
 
+    int validator = (b * b) - 4 * a * c;
+
+    if (validator < 0) {
+        printf("Roots are imaginary!\n");
+    } else {
+        root1 = (-b + sqrt(validator)) / (2.0 * a);
+        root2 = (-b - sqrt(validator)) / (2.0 * a);
+        printf("Roots are %.2lf and %.2lf\n", root1, root2);
+    }
+    return 0;
 }
+
