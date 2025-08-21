@@ -15,8 +15,7 @@ void main(){
     scanf("%d", &n);
 
 
-
-    if(n<0 || x<0){
+    if(n<0){
         printf("Invalid Input");
         return;
     }

@@ -3,7 +3,7 @@
 
 
 void main(){
-    int arr[5] = {1,4,3,4,2};
+    unsigned int arr[10] = {1,2, 5, 3, 4, 10, 7, 6, 8 ,8};
     int n = sizeof(arr)/sizeof(arr[0]);
     int expectedSum = n*(n+1)/2;
     int actualSum = 0;
@@ -13,6 +13,7 @@ void main(){
         actualSum = actualSum + arr[i];
         actualSumSq = actualSumSq + arr[i]*arr[i];
     }
+
     int diff = expectedSum - actualSum;
     int sq_diff = expectedSumSq - actualSumSq;
     int sum_DM = sq_diff/diff;
