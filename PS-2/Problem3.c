@@ -17,6 +17,6 @@ void main(){
         number--;
         i++;
     }
-    printf("Sum : %d", result);
+    printf("Result : %d", result);
 
 }
