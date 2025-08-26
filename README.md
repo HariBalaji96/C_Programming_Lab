@@ -10,7 +10,7 @@ only one loop and without any extra memory
 
 
 void main(){
-    unsigned int arr[10] = {1,2, 5, 3, 4, 10, 7, 6, 8 ,8};
+    int arr[10] = {1,2, 5, 3, 4, 10, 7, 6, 8 ,8};
     int n = sizeof(arr)/sizeof(arr[0]);
     int expectedSum = n*(n+1)/2;
     int actualSum = 0;
