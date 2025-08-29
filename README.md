@@ -1,8 +1,6 @@
 # Interesting Problems From Problem Sheets
 
-### 1.Consider an array of numbers from 1 to N . In this array, one of the numbers gets duplicated
-and one is missing. Write a C program to find out the duplicated number. Condition: Using
-only one loop and without any extra memory
+### 1.Consider an array of numbers from 1 to N . In this array, one of the numbers gets duplicated and one is missing. Write a C program to find out the duplicated number. Condition: Using only one loop and without any extra memory
 
 ```
 #include<stdio.h>
@@ -31,7 +29,9 @@ void main(){
 
 }
 ```
+
 #### Notes:
+
 - If the array is sorted we can easily find the duplicate and missing number using two pointer technique (Fast and Slow Pointer)
 - If the array is unsorted we have to find using this following technique
   - Sum of Natural Number `(Ex_Sum) = n(n+1)/2`
@@ -41,4 +41,3 @@ void main(){
   - Then SumDM = `Sq_Diff/diff`
   - missing = `(diff+SumDM)/2`
   - duplicate = `missing - diff`
-
